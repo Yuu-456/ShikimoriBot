@@ -23,7 +23,7 @@
       "BOT_TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
-         "value": ""
+         "value": "5586021728:AAFBbplGQYuHlVTGrZl10G9RRHRdQPf7OfY"
       },
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
@@ -43,7 +43,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "2088106582"
+         "value": "1651434890"
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
@@ -55,7 +55,7 @@
       },
       "BOT_USERNAME": {
          "description": "Username of your bot without the @",
-         "value": "micchon_shikimori_bot",
+         "value": "SiestaXprobot",
          "required": true
       },
 
@@ -67,17 +67,17 @@
 
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "SOME1HING"
+         "value": "TotallyNotArh"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "tyranteyeeee"
+         "value": "SiestXSupport"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
-         "value": "mongodb+srv://SOME1HING:some1hing123@some1hing-db.hfyyfjfh.mongodb.net/?retryWrites=true&w=majorityPYTHONPATH=/app"
+         "value": "mongodb+srv://sanemibot:itfAJ1cuMRF9NmCO@cluster0.g37l0b7.mongodb.net/?retryWrites=true&w=majorityPYTHONPATH=/app"
       },
       "LOG_CHANNEL": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
@@ -106,13 +106,13 @@
       },
       "DATABASE_URL": {
         "description": "Put sql based database link. Recommended to use Elephant SQL.",
-        "value": "postgres://dsnjbjab:saifhsudfasfihaif@sdsfs.db.elephantsql.com/dsnjbjab",
+        "value": "postgres://ksvuvloz:isIboXQYHI5aUg7m0kmPpUB5ZHOKryFw@arjuna.db.elephantsql.com/ksvuvloz",
         "required": true
       },
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py, /sh, /eval etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": ""
+         "value": "5514985164 5320639253"
       },
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
@@ -174,7 +174,7 @@
       "ANIME_NAME": {
          "description": "If your bot is based on some anime, type the name of anime. Otherwise, manually edit PM_START_TEXT in main.py",
          "required": false,
-         "value": "Shikimori's Not Just a Cutie"
+         "value": "The Detective Is Already Dead"
       },
       "START_MEDIA": {
          "description": "Paste link of your media(img, video or gif) that you want to show in /start. Otherwise put None.",
@@ -184,7 +184,7 @@
       "UPDATE_CHANNEL": {
          "description": "Leave it as it is, or if you have your own update channel, put channel username without @.",
          "required": true,
-         "value": "Shikimori_bot_Updates"
+         "value": "SiestaXUpdates"
       },
       "APOD_API_KEY": {
          "description": "Get yours from https://api.nasa.gov/ to get NASA's picture of the day.",
@@ -194,7 +194,7 @@
       "ALIVE_MEDIA": {
          "description": "Paste link of your media(img, video or gif) that you want to show in /alive. Otherwise put None.",
          "required": false,
-         "value": "https://telegra.ph/file/2b04f7812f22b983f8a10.mp4"
+         "value": "https://telegra.ph/file/2166415462e4742e83336.jpg"
       },
       "AI_API_KEY": {
          "description": "AI API key, get from @Void_HeadQuarters.",
@@ -204,27 +204,27 @@
       "STATS_IMG": {
          "description": "Paste image link for /stats. Otherwise keep it blank.",
          "required": false,
-         "value": "https://telegra.ph/file/fa1acd48ae767baa02e3f.jpg"
+         "value": "https://telegra.ph/file/61cde15829d3847377d5a.jpg"
       },
       "NETWORK": {
          "description": "If your bot is connected to a network, Type the Network name. Only type one Network name. Otherwise leave it blank, or just leave【V๏ɪ፝֟𝔡】»Network«",
          "required": false,
-         "value": "【V๏ɪ፝֟𝔡】»Network«"
+         "value": "✮ ɆⱫ₦ ✮ »Network«"
       },
       "NETWORK_USERNAME": {
          "description": "If you have put a netowrk name, you also have to put its username without @",
          "required": false,
-         "value": "VoidxNetwork"
+         "value": "Ezn_Network"
       },
       "OWNER_WELCOME_MEDIA": {
          "description": "URL of media that you want to show when owner of bot joins any chat. Supported file types (jpg, png, gif, webp, mkv, mp4).",
          "required": false,
-         "value": ""
+         "value": "https://telegra.ph/file/1005912b08b886a670af4.jpg"
       },
       "INLINE_IMG": {
          "description": "URL of image for inline querry. Must be a still image.",
          "required": false,
-         "value": "https://telegra.ph/file/8cec66d01df8c0071ebaa.jpg"
+         "value": "https://telegra.ph/file/0ca5c518cd395bc69bc20.jpg"
       }
    }  
 }
