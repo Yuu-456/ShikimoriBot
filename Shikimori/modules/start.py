@@ -77,11 +77,11 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="Network", url=f"t.me/ezn_network"),
-        InlineKeyboardButton(text=" .Commands.", callback_data="help_back"),
+        InlineKeyboardButton(text="Commands.", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text=".Support.", url=f"https://t.me/{SUPPORT_CHAT}"),
-        InlineKeyboardButton(text=".Updates.", url=f"https://t.me/{UPDATE_CHANNEL}"),
+        InlineKeyboardButton(text="Support.", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="Updates.", url=f"https://t.me/{UPDATE_CHANNEL}"),
    
     ], 
 ]
