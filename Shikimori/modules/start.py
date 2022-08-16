@@ -46,9 +46,29 @@ IMG_START = START_MEDIA.split(".")
 start_id = IMG_START[-1]
 
 PM_START_TEXT = f"""
-\nI am *{bot_name}* , a group management bot based on the anime *{ANIME_NAME}*![ ]({START_MEDIA})
+───『 ✟ 𝚂𝚒𝚎𝚜𝚝𝚊✟』───
+Konichiwa {}, 
 
-*Click on the Commands Button below to go through my commands.*
+×————————————————————×
+--»ɪ ᴀᴍ ᴀᴅᴠᴀɴᴄᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛꜱ ᴏꜰ ꜰᴇᴀᴛᴜʀᴇꜱ. 
+--»I Am The F🇦‌🇲‌🇴‌🇺‌🇸‌ D🇹‌🇪‌🇨‌🇹‌🇮‌🇻‌🇪‌ 🇦‌🇲‌🇴‌🇳‌🇬‌ 🇹‌🇭‌🇪‌ 12 🇹‌🇺‌🇳‌🇪‌🇷‌🇸‌.
+
+×————————————————————×
+✪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɴᴏᴡ!
+
+×————————————————————×
+✟ Don't Worry, I'm the strongest. ✟
+
+×————————————————————×
+✪ ғʟᴏᴏᴅ ᴄᴏɴᴛʀᴏʟ.
+✪ ᴀᴘᴘʀᴏᴠᴀʟs ᴀɴᴅ ᴅɪsᴀᴘᴘʀᴏᴠᴀʟs.
+✪ ᴋɪʟʟɪɴɢ 🇪‌🇳‌🇪‌🇲‌🇮‌🇪‌🇸‌ 🇫‌🇷‌🇴‌🇲‌ SPES ʙʏ ᴍʏ ʙᴀɴ/ᴍᴜᴛᴇ/ᴡᴀʀɴ ᴘᴏᴡᴇʀs.
+
+×————————————————————×
+
+Powered By - 
+×————————————————————×
+ᴛʏᴘᴇ /Help  ᴛᴏ ꜱᴇᴇ ᴍʏ ᴄᴏᴍᴍᴀɴᴅꜱ![ ]({START_MEDIA})
 """
 
 HELP_STRINGS = """
