@@ -68,8 +68,7 @@ Konichiwa {},
 
 Powered By - 
 ×————————————————————×
-ᴛʏᴘᴇ /Help  ᴛᴏ ꜱᴇᴇ ᴍʏ ᴄᴏᴍᴍᴀɴᴅꜱ![ ]({START_MEDIA})
-"""
+ᴛʏᴘᴇ /Help  ᴛᴏ ꜱᴇᴇ ᴍʏ ᴄᴏᴍᴍᴀɴᴅꜱ![ ]({START_MEDIA})"""
 
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
