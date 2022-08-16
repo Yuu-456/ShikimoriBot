@@ -44,7 +44,6 @@ bot_name = f"{dispatcher.bot.first_name}"
 
 IMG_START = START_MEDIA.split(".")
 start_id = IMG_START[-1]
-START_VIDEO = "https://telegra.ph/file/c67e2ba22a68966e6d078.mp4"
 
 PM_START_TEXT = f"""
 
@@ -65,7 +64,7 @@ PM_START_TEXT = f"""
 
 ×————————————————————×
 
-ᴛʏᴘᴇ /Help  ᴛᴏ ꜱᴇᴇ ᴍʏ ᴄᴏᴍᴍᴀɴᴅꜱ!
+ᴛʏᴘᴇ /Help  ᴛᴏ ꜱᴇᴇ ᴍʏ ᴄᴏᴍᴍᴀɴᴅꜱ![.]({START_MEDIA})
 """
 
 HELP_STRINGS = """
@@ -121,7 +120,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             hmm = "Konichiwa {} ,\nʙᴏᴋᴜ ɴᴏ ɴᴀᴍᴀɪ ᴡᴀ Siesta  ".format(escape_markdown(first_name))
-            HMM = hmm + PM_START_TEXT + START_VIDEO 
+            HMM = hmm + PM_START_TEXT  
 
             update.effective_message.reply_text(
                 HMM,                        
