@@ -45,7 +45,7 @@ bot_name = f"{dispatcher.bot.first_name}"
 IMG_START = START_MEDIA.split(".")
 start_id = IMG_START[-1]
 
-PM_START_TEXT = f"""
+PM_START_TEXT = """
 ───『 ✟ 𝚂𝚒𝚎𝚜𝚝𝚊✟』───
 Konichiwa {}, 
 
@@ -68,7 +68,8 @@ Konichiwa {},
 
 Powered By - 
 ×————————————————————×
-ᴛʏᴘᴇ /Help  ᴛᴏ ꜱᴇᴇ ᴍʏ ᴄᴏᴍᴍᴀɴᴅꜱ![ ]({START_MEDIA})"""
+ᴛʏᴘᴇ /Help  ᴛᴏ ꜱᴇᴇ ᴍʏ ᴄᴏᴍᴍᴀɴᴅꜱ![ ](https://telegra.ph/file/c67e2ba22a68966e6d078.mp4)
+"""
 
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
