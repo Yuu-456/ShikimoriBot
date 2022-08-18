@@ -12,7 +12,7 @@ PHOTO = "https://telegra.ph/file/267bcc4e46603f7fabfdd.jpg"
 
 network_name = NETWORK_USERNAME.lower()
 
-if network_name == "EZN":
+if network_name == "ezn_network":
     def EZN(update: Update, context: CallbackContext):
 
         TEXT = f"""
