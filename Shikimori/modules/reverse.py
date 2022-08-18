@@ -500,7 +500,7 @@ def scam(imgspage, lim):
 
 
 REVERSE_HANDLER = DisableAbleCommandHandler(
-    ["reverse", "pp","PP", "Pp"], reverse, pass_args=True, admin_ok=True, run_async=True
+    ["reverse", "pp" , "p" , "r" ], reverse, pass_args=True, admin_ok=True, run_async=True
 )
 GRS_HANDLER = DisableAbleCommandHandler(
     "grs", grs, pass_args=True, admin_ok=True, run_async=True
@@ -516,6 +516,8 @@ dispatcher.add_handler(GG_HANDLER)
 __mod_name__ = "Reverse 🔄"
 __help__ = """
 *Reverse*
+ ❍ `/r` : Please reply to a sticker, or an image to search it!
+ ❍ `/p` : Please reply to a sticker, or an image to search it!
  ❍ `/pp` : Please reply to a sticker, or an image to search it!
  ❍ `/reverse` : Please reply to a sticker, or an image to search it!
 """
