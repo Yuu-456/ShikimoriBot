@@ -136,7 +136,7 @@ def start(update: Update, context: CallbackContext):
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 × `{}` *ᴡᴇᴇʙꜱ, ᴀᴄʀᴏꜱꜱ* `{}` *ᴄʜᴀᴛꜱ.*
 ┗━━━━━━━━━━━━━━━━━━━━
-*ᴛʀʏ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴄʀᴇᴀᴛᴏʀꜱ ꜰᴏʀ ᴀɴʏ ᴋɪɴᴅ ᴏꜰ Qᴜᴇʀɪᴇꜱ * *ɪ ᴀᴍ ʜᴇʀᴇ ꜰᴏʀ ʏᴏᴜ ᴀᴛ {} since :* `{}`\n".format(escape_markdown(first_name), escape_markdown(chat_name), uptime)
+*ᴛʀʏ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴄʀᴇᴀᴛᴏʀꜱ ꜰᴏʀ ᴀɴʏ ᴋɪɴᴅ ᴏꜰ Qᴜᴇʀɪᴇꜱ * *ɪ ᴀᴍ ʜᴇʀᴇ ꜰᴏʀ ʏᴏᴜ ᴀᴛ {} since :* `{}`\n""".format(escape_markdown(first_name), escape_markdown(chat_name), uptime)
         try:
             if start_id in ("jpeg", "jpg", "png"):
                 update.effective_message.reply_photo(
