@@ -129,14 +129,7 @@ def start(update: Update, context: CallbackContext):
         chat_id = update.effective_chat.id
         first_name = update.effective_user.first_name
         chat_name = dispatcher.bot.getChat(chat_id).title
-        start_text= """*ᴋᴏɴɪᴄʜɪᴡᴀ `{}`,  ʜᴇʀᴇ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴇᴠᴇʀʏᴛʜɪɴɢ,
-*ɪ ᴀᴍ ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏꜰ ᴀᴡᴇꜱᴏᴍᴇ ꜰᴇᴀᴛᴜʀᴇꜱ*
-┏━━━━━━━━━━━━━━━━━━━━
-× *ᴡᴏʀᴋɪɴɢ ᴛɪᴍᴇ:* `{}`
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-× `{}` *ᴡᴇᴇʙꜱ, ᴀᴄʀᴏꜱꜱ* `{}` *ᴄʜᴀᴛꜱ.*
-┗━━━━━━━━━━━━━━━━━━━━
-*ᴛʀʏ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴄʀᴇᴀᴛᴏʀꜱ ꜰᴏʀ ᴀɴʏ ᴋɪɴᴅ ᴏꜰ Qᴜᴇʀɪᴇꜱ * *ɪ ᴀᴍ ʜᴇʀᴇ ꜰᴏʀ ʏᴏᴜ ᴀᴛ {} since :* `{}`\n""".format(escape_markdown(first_name), escape_markdown(chat_name), uptime)
+        start_text= "*Hey {}, I'm here for you at {} since :* `{}`\n".format(escape_markdown(first_name), escape_markdown(chat_name), uptime)
         try:
             if start_id in ("jpeg", "jpg", "png"):
                 update.effective_message.reply_photo(
