@@ -5,8 +5,8 @@ import requests
 from asyncio import sleep
 from bs4 import BeautifulSoup
 
-from shikimori.sql.waifu_sql import is_harem, add_grp, rm_grp, get_all_grp
-from shikimori.sql.husb_sql import is_husb, add_hus_grp, rm_hus_grp, get_all_hus_grp
+from sqlalchemy.sql.waifu_sql import is_harem, add_grp, rm_grp, get_all_grp
+from sqlalchemy.sql.husb_sql import is_husb, add_hus_grp, rm_hus_grp, get_all_hus_grp
 from . import *
 
 qt = "Add them to your harem by sending"
