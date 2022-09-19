@@ -1,8 +1,6 @@
 import asyncio
 import os
 import datetime
-import lottie
-import urllib
 import requests
 from asyncio import sleep
 from bs4 import BeautifulSoup
