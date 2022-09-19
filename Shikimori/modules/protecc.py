@@ -17,7 +17,7 @@ def progress(current, total):
         )
     )
 
-@rishu_cmd(pattern="pp(?:\s|$)([\s\S]*)")
+@dev_plus(pattern="pp(?:\s|$)([\s\S]*)")
 async def _(event):
     BASE_URL = "http://images.google.com"
     if event.reply_to_msg_id:
@@ -153,7 +153,7 @@ async def _(event):
                 pass
 
 
-@rishu_cmd(pattern="adwaifu(?:\s|$)([\s\S]*)")
+@dev_plus(pattern="adwaifu(?:\s|$)([\s\S]*)")
 async def _(event):
     if not event.is_group:
         await eod(event, "Autowaifu works in Groups Only !!")
@@ -165,7 +165,7 @@ async def _(event):
     await eod(event, f"**Added Chat** {event.chat.title} **With Id** `{event.chat_id}` **To Autowaifu Database.**")
 
 
-@rishu_cmd(pattern="adhusb(?:\s|$)([\s\S]*)")
+@dev_plus(pattern="adhusb(?:\s|$)([\s\S]*)")
 async def _(event):
     if not event.is_group:
         await eod(event, "Autohusbando works in Groups Only !!")
@@ -177,7 +177,7 @@ async def _(event):
     await eod(event, f"**Added Chat** {event.chat.title} **With Id** `{event.chat_id}` **To AutoHusbando Database.**")
 
 
-@rishu_cmd(pattern="rmwaifu(?:\s|$)([\s\S]*)")
+@dev_plus(pattern="rmwaifu(?:\s|$)([\s\S]*)")
 async def _(event):
     if not event.is_group:
         await eod(event, "Autowaifu works in groups only !!")
@@ -189,7 +189,7 @@ async def _(event):
     await eod(event, f"**Removed Chat** {event.chat.title} **With Id** `{event.chat_id}` **From AutoWaifu Database.**")
 
 
-@rishu_cmd(pattern="rmhusb(?:\s|$)([\s\S]*)")
+@dev_plus(pattern="rmhusb(?:\s|$)([\s\S]*)")
 async def _(event):
     if not event.is_group:
         await eod(event, "Autohusbando works in groups only !!")
@@ -201,7 +201,7 @@ async def _(event):
     await eod(event, f"**Removed Chat** {event.chat.title} **With Id** `{event.chat_id}` **From AutoHusbando Database.**")
 
 
-@rishu_cmd(pattern="aw$")
+@dev_plus(pattern="aw$")
 async def _(event):
     rishu = await eor(event, "Fetching Autowaifu chats...")
     all_grp = get_all_grp()
@@ -213,7 +213,7 @@ async def _(event):
     await rishu.edit(x)
 
 
-@rishu_cmd(pattern="ah$")
+@dev_plus(pattern="ah$")
 async def _(event):
     rishu = await eor(event, "Fetching Autohusbando chats...")
     all_grp = get_all_hus_grp()
