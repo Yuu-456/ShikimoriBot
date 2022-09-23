@@ -76,19 +76,9 @@ def stats(update, context):
     status += "*➢ System Start time:* " + str(uptime) + "\n"
     uname = platform.uname()
     status += "*➢ System:* " + str(uname.system) + "\n"
-    status += "*➢ Node name:* " + escape_markdown(str(uname.node)) + "\n"
     status += "*➢ Release:* " + escape_markdown(str(uname.release)) + "\n"
     status += "*➢ Machine:* " + escape_markdown(str(uname.machine)) + "\n"
-    mem = virtual_memory()
-    cpu = cpu_percent()
-    disk = disk_usage("/")
-    status += "*➢ CPU:* " + str(cpu) + " %\n"
-    status += "*➢ RAM:* " + str(mem[2]) + " %\n"
-    status += "*➢ Storage:* " + str(disk[3]) + " %\n\n"
     status += "*➢ Python Version:* " + python_version() + "\n"
-    status += "*➢ Python-Telegram-Bot:* " + str(ptbver) + "\n"
-    status += "*➢ Telethon Version:* " + str(tlhver) + "\n"
-    status += "*➢ Pyrogram Version:* " + str(pyrover) + "\n"
     status += "*➢ Uptime:* " + str(botuptime) + "\n"
     try:
         if STATS_IMG:
@@ -141,8 +131,8 @@ def stats(update, context):
                 [
                   [                  
                        InlineKeyboardButton(
-                                text="REPO",
-                                url="https://github.com/SOME-1HING/ShikimoriBot"),
+                                text="Lieutenant Owner",
+                                url="https://t.me/kattipui"),
                      ] 
                 ]
             ),
