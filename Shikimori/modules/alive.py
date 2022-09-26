@@ -31,8 +31,9 @@ bot_name = f"{dispatcher.bot.first_name}"
 
 ALIVE_ID = ALIVE_MEDIA.split(".")
 alive_id = ALIVE_ID[-1]
-
-SHIKIMORI = [
+def awake(update: Update, context: CallbackContext):
+    message = update.effective_message
+    buttons = [
         [
         InlineKeyboardButton(
             text="Updates",
@@ -41,8 +42,8 @@ SHIKIMORI = [
             text="Support",
             url=f"https://t.me/{SUPPORT_CHAT}"),
         ],
-     ]
-@pbot.on_message(filters.command("alive"))
+       ]
+
 async def restart(client, m: Message):
     await m.delete()
     accha = await m.reply("⚡")
