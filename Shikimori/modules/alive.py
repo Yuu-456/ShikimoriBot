@@ -31,7 +31,7 @@ bot_name = f"{dispatcher.bot.first_name}"
 
 ALIVE_ID = ALIVE_MEDIA.split(".")
 alive_id = ALIVE_ID[-1]
-def awake(update: Update, context: CallbackContext):
+def awake(update: Update, context: CallbackContext , m: message):
     message = update.effective_message
     buttons = [
         [
@@ -43,9 +43,6 @@ def awake(update: Update, context: CallbackContext):
             url=f"https://t.me/{SUPPORT_CHAT}"),
         ],
        ]
-
-else ,
-    async def restart(client, m: message):
     message = update.effective_message
     await m.delete()
     accha = await m.reply("⚡")
