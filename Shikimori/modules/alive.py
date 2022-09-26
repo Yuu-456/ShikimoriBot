@@ -44,7 +44,7 @@ def awake(update: Update, context: CallbackContext):
         ],
        ]
 
-async def restart(client, m: Message):
+async def restart(client, m: message):
     message = update.effective_message
     await m.delete()
     accha = await m.reply("⚡")
