@@ -32,8 +32,6 @@ bot_name = f"{dispatcher.bot.first_name}"
 ALIVE_ID = ALIVE_MEDIA.split(".")
 alive_id = ALIVE_ID[-1]
 
-def awake(update: Update, context: CallbackContext):
-    message = update.effective_message
     buttons = [
         [
         InlineKeyboardButton(
@@ -46,7 +44,7 @@ def awake(update: Update, context: CallbackContext):
      ]
     
     @pgram.on_message(filters.command("alive"))
-async def restart(client, m: Message):
+    async def restart(client, m: Message):
     await m.delete()
     accha = await m.reply("⚡")
     await asyncio.sleep(1)
