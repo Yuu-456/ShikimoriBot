@@ -1,97 +1,47 @@
-"""
-STATUS: Code is working. ✅
-"""
+##MADE BY @KIRITO_1240
 
-"""
-GNU General Public License v3.0
+import random
+import asyncio
+from pyrogram import filters
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
+from Shikimori import pbot
 
-Copyright (C) 2022, SOME-1HING [https://github.com/SOME-1HING]
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>.
-"""
-
-from Shikimori.vars import ALIVE_MEDIA, UPDATE_CHANNEL, SUPPORT_CHAT, OWNER_USERNAME, NETWORK, NETWORK_USERNAME
-from Shikimori import dispatcher
-from Shikimori.modules.disable import DisableAbleCommandHandler
-from telegram import ParseMode, Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import CallbackContext
-
-bot_name = f"{dispatcher.bot.first_name}"
-
-ALIVE_ID = ALIVE_MEDIA.split(".")
-alive_id = ALIVE_ID[-1]
-async def awake(update: Update, context: CallbackContext):
-    message = update.effective_message
-    buttons = [
-        [
-        InlineKeyboardButton(
-            text="Updates",
-            url=f"https://t.me/{UPDATE_CHANNEL}"),
-        InlineKeyboardButton(
-            text="Support",
-            url=f"https://t.me/{SUPPORT_CHAT}"),
-        ],
-       ]
-    await message.delete()
-    accha = await message.reply("⚡")
-    await asyncio.sleep(1)
-    await accha.edit("ᴀʟɪᴠɪɴɢ..")
-    await asyncio.sleep(0.1)
-    await accha.edit("ᴀʟɪᴠɪɴɢ ʙᴀʙʏ ....")
-    await accha.delete()
-    await asyncio.sleep(0.1)
-    umm = await message.reply_sticker(
-       "CAACAgUAAx0CZIiVngABBHAzYwdi9OIVTQ7DYELAqMl46fgnK4wAAjsIAAKagolX-O0V64tvzK8pBA"
-    )
-    await asyncio.sleep(0.1)
-first_name = update.effective_user.first_name
-user = message.from_user
-TEXT = f'''
-   <b>Hi <a href="tg://user?id={user.id}">{first_name}</a>, I'm {bot_name} Robot.
-
-⚪ I'm Working Properly
-
-⚪ My Owner : <a href="https://t.me/{OWNER_USERNAME}">{OWNER_USERNAME}</a></b>
-    """
-    if NETWORK:
-        TEXT = TEXT + f'\n⚪ <b>I am Powered by : <a href="https://t.me/{NETWORK_USERNAME}">{NETWORK}</a>\n\n' + 'Thanks For Adding Me Here ❤️</b>'
-    
-    else:
-        TEXT = TEXT + "\n<b>Thanks For Adding Me Here ❤️</b>"
-
-    try:
-        if alive_id in ("jpeg", "jpg", "png"):
-            message.reply_photo(ALIVE_MEDIA, caption=TEXT, reply_markup=InlineKeyboardMarkup(buttons),parse_mode=ParseMode.HTML)
-        elif alive_id in ("mp4", "mkv"):
-            message.reply_video(ALIVE_MEDIA, caption=TEXT, reply_markup=InlineKeyboardMarkup(buttons),parse_mode=ParseMode.HTML)
-        elif alive_id in ("gif", "webp"):
-            message.reply_animation(ALIVE_MEDIA, caption=TEXT, reply_markup=InlineKeyboardMarkup(buttons),parse_mode=ParseMode.HTML)
-        else:
-            message.reply_text(TEXT, reply_markup=InlineKeyboardMarkup(buttons),parse_mode=ParseMode.HTML)
-
-    except:
-        message.reply_text(TEXT, reply_markup=InlineKeyboardMarkup(buttons),parse_mode=ParseMode.HTML)
-
-ALIVE_HANDLER = DisableAbleCommandHandler("alive", awake, run_async=True)
-dispatcher.add_handler(ALIVE_HANDLER)
-__command_list__ = ["alive"]
-__handlers__ = [
-    ALIVE_HANDLER,
+PHOTO = [
+    "https://telegra.ph/file/d7a5c3eb86548fcae64a8.jpg",
 ]
 
-__mod_name__ = "Alive ✨"
-__help__ = """
-*ALIVE*
- ❍ `/alive` :Check BOT status
-"""
+KIRITO = [
+    [
+        InlineKeyboardButton(text="ʜᴇʟᴘ", url=f"https://t.me/UnmeiXBot?start=help"),
+        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+    ],
+    [
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"http://t.me/UnmeiXBot?startgroup=true"),
+    ],
+]
+
+@pbot.on_message(filters.command("alive"))
+async def restart(client, m: Message):
+    accha = await m.reply("⚡")
+    await asyncio.sleep(2)
+    await accha.edit("ᴀʟɪᴠɪɴɢ..")
+    await asyncio.sleep(0.3)
+    await accha.edit("ᴀʟɪᴠɪɴɢ...")
+    await accha.delete()
+    await asyncio.sleep(1)
+    umm = await m.reply_animation("https://telegra.ph/file/e00fa1d8eae64947f9a12.mp4")
+    await asyncio.sleep(2)
+    await umm.edit("ᴅᴇsᴛɪɴʏ")
+    await asyncio.sleep(2)
+    await umm.delete()
+    await m.reply_photo(
+        random.choice(PHOTO),
+        caption=f"""**ʜᴇʏ​ ɪ ᴀᴍ ᴅᴇsᴛɪɴʏ​**
+ ━━━━━━━━━━━━━━━━━━━
+ » **ᴍʏ ʟᴏᴠᴇ :** ᴋɪʀɪᴛᴏ
+ » **★ ɪ’ᴍ ᴏɴʟʏ ʜᴇʀᴇ sᴏ ʏᴏᴜ ᴄᴀɴ ᴀᴛʟᴇᴀsᴛ ʟɪᴠᴇ ʟɪᴋᴇ ᴀ ʜᴜᴍᴀɴ ʙᴇɪɴɢ**
+ » **★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [ᴋɪʀɪᴛᴏ](https://t.me/KIRITO_1240)**
+ » **ᴛʜᴀɴᴋs ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ʜᴇʀᴇ ❤️**
+ ━━━━━━━━━━━━━━━━━━━""",
+        reply_markup=InlineKeyboardMarkup(KIRITO)
+    )
