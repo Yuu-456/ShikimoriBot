@@ -13,7 +13,7 @@ PHOTO = [
 KIRITO = [
     [
         InlineKeyboardButton(text="ʜᴇʟᴘ", url=f"https://t.me/UnmeiXBot?start=help"),
-        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/kurumisuppor"),
     ],
     [
         InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"http://t.me/UnmeiXBot?startgroup=true"),
