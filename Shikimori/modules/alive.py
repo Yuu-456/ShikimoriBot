@@ -45,16 +45,17 @@ def awake(update: Update, context: CallbackContext):
        ]
 
 async def restart(client, m: Message):
-    await m.delete()
-    accha = await m.reply("⚡")
-    await asyncio.sleep(1)
-    await accha.edit("ᴀʟɪᴠɪɴɢ..")
-    await asyncio.sleep(0.1)
-    await accha.edit("ᴀʟɪᴠɪɴɢ ʙᴀʙʏ ....")
-    await accha.delete()
-    await asyncio.sleep(0.1)
-    umm = await m.reply_sticker(
-        "CAACAgUAAx0CZIiVngABBHAzYwdi9OIVTQ7DYELAqMl46fgnK4wAAjsIAAKagolX-O0V64tvzK8pBA"
+    message = update.effective_message
+       await m.delete()
+       accha = await m.reply("⚡")
+       await asyncio.sleep(1)
+       await accha.edit("ᴀʟɪᴠɪɴɢ..")
+       await asyncio.sleep(0.1)
+       await accha.edit("ᴀʟɪᴠɪɴɢ ʙᴀʙʏ ....")
+       await accha.delete()
+       await asyncio.sleep(0.1)
+       umm = await m.reply_sticker(
+          "CAACAgUAAx0CZIiVngABBHAzYwdi9OIVTQ7DYELAqMl46fgnK4wAAjsIAAKagolX-O0V64tvzK8pBA"
     )
     await asyncio.sleep(0.1)
 
