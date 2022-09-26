@@ -45,8 +45,20 @@ def awake(update: Update, context: CallbackContext):
         ],
      ]
     
-    first_name = update.effective_user.first_name
-    user = message.from_user
+    @pgram.on_message(filters.command("alive"))
+async def restart(client, m: Message):
+    await m.delete()
+    accha = await m.reply("⚡")
+    await asyncio.sleep(1)
+    await accha.edit("ᴀʟɪᴠɪɴɢ..")
+    await asyncio.sleep(0.1)
+    await accha.edit("ᴀʟɪᴠɪɴɢ ʙᴀʙʏ ....")
+    await accha.delete()
+    await asyncio.sleep(0.1)
+    umm = await m.reply_sticker(
+        "CAACAgUAAx0CZIiVngABBHAzYwdi9OIVTQ7DYELAqMl46fgnK4wAAjsIAAKagolX-O0V64tvzK8pBA"
+    )
+    await asyncio.sleep(0.1)
 
     TEXT = f"""
     <b>Hi <a href="tg://user?id={user.id}">{first_name}</a>, I'm {bot_name} Robot.
