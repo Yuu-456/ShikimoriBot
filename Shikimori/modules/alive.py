@@ -32,7 +32,7 @@ bot_name = f"{dispatcher.bot.first_name}"
 ALIVE_ID = ALIVE_MEDIA.split(".")
 alive_id = ALIVE_ID[-1]
 
-    buttons = [
+    SHIKIMORI = [
         [
         InlineKeyboardButton(
             text="Updates",
