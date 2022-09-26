@@ -57,8 +57,8 @@ async def awake(update: Update, context: CallbackContext):
     await asyncio.sleep(0.1)
 first_name = update.effective_user.first_name
 user = message.from_user
-    TEXT = f'''
-    <b>Hi <a href="tg://user?id={user.id}">{first_name}</a>, I'm {bot_name} Robot.
+TEXT = f'''
+   <b>Hi <a href="tg://user?id={user.id}">{first_name}</a>, I'm {bot_name} Robot.
 
 ⚪ I'm Working Properly
 
