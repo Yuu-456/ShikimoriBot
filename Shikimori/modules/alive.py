@@ -7,7 +7,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from Shikimori import pbot
 
 PHOTO = [
-    "https://telegra.ph/file/d7a5c3eb86548fcae64a8.jpg",
+    "https://telegra.ph/file/de6d075ecb44f24d6f5bc.mp4",
 ]
 
 KIRITO = [
@@ -40,7 +40,7 @@ async def restart(client, m: Message):
  ━━━━━━━━━━━━━━━━━━━
  » **ᴍʏ ʟᴏᴠᴇ :** ᴋɪʀɪᴛᴏ
  » **★ ɪ’ᴍ ᴏɴʟʏ ʜᴇʀᴇ sᴏ ʏᴏᴜ ᴄᴀɴ ᴀᴛʟᴇᴀsᴛ ʟɪᴠᴇ ʟɪᴋᴇ ᴀ ʜᴜᴍᴀɴ ʙᴇɪɴɢ**
- » **★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [ᴋɪʀɪᴛᴏ](https://t.me/KIRITO_1240)**
+ » **★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [ᴋɪʀɪᴛᴏ](https://t.me/KATTIPUI)**
  » **ᴛʜᴀɴᴋs ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ʜᴇʀᴇ ❤️**
  ━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(KIRITO)
