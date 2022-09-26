@@ -43,7 +43,7 @@ SHIKIMORI = [
         ],
      ]
 @pgram.on_message(filters.command("alive"))
-    async def restart(client, m: Message):
+async def restart(client, m: Message):
     await m.delete()
     accha = await m.reply("⚡")
     await asyncio.sleep(1)
