@@ -31,7 +31,7 @@ bot_name = f"{dispatcher.bot.first_name}"
 
 ALIVE_ID = ALIVE_MEDIA.split(".")
 alive_id = ALIVE_ID[-1]
-async def awake(update: Update, context: CallbackContext , m: message):
+async def awake(update: Update, context: CallbackContext):
     message = update.effective_message
     buttons = [
         [
@@ -43,16 +43,15 @@ async def awake(update: Update, context: CallbackContext , m: message):
             url=f"https://t.me/{SUPPORT_CHAT}"),
         ],
        ]
-    message = update.effective_message
-    await m.delete()
-    accha = await m.reply("⚡")
+    await message.delete()
+    accha = await message.reply("⚡")
     await asyncio.sleep(1)
     await accha.edit("ᴀʟɪᴠɪɴɢ..")
     await asyncio.sleep(0.1)
     await accha.edit("ᴀʟɪᴠɪɴɢ ʙᴀʙʏ ....")
     await accha.delete()
     await asyncio.sleep(0.1)
-    umm = await m.reply_sticker(
+    umm = await message.reply_sticker(
        "CAACAgUAAx0CZIiVngABBHAzYwdi9OIVTQ7DYELAqMl46fgnK4wAAjsIAAKagolX-O0V64tvzK8pBA"
     )
     await asyncio.sleep(0.1)
