@@ -52,11 +52,15 @@ start_id = IMG_START[-1]
 buttons = [
     [
         InlineKeyboardButton(
-            text=f"➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
+            text=f" Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
         InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATE_CHANNEL}"),   
+    ],
+    [
+        InlineKeyboardButton(
+            text=f"𝙳ʀᴀɢᴏɴ 𝙽ᴇᴛᴡᴏʀᴋ", url=f"https://t.me/DragonsXNetwork"),
     ], 
 ]
 
@@ -95,7 +99,7 @@ def start(update: Update, context: CallbackContext):
             users = f"{sql.num_users()}"
             chats = f"{sql.num_chats()}"
             first_name = update.effective_user.first_name
-            start_text = PM_START_TEXT.format(escape_markdown(first_name), bot_name, ANIME_NAME, users, chats, uptime)
+            start_text = PM_START_TEXT.format(escape_markdown(first_name), users, chats, uptime)
             try:
                 if start_id in ("jpeg", "jpg", "png"):
                     update.effective_message.reply_photo(
